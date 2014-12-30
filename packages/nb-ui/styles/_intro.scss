@@ -1,9 +1,7 @@
+@import "variables";
+
 .citiesContainer {
 	text-align:center;
-}
-
-.chooseCity {
-	padding: 10px 20px;
 }
 
 .citySelect {
@@ -16,6 +14,20 @@
 	border-radius: 0px;
 }
 
+.intro {
+	margin: 20px 20%;
+}
+
+.intro .desc {
+	margin-top: 20px;
+}
+
+.chooseCity {
+	margin: 0 20%;
+	padding: 10px 0;
+}
+
+
 @media screen and (min-width: 768px) {
 	
 	.intro {
@@ -23,9 +35,10 @@
 		height: 130px;
 		float: left;
 		margin-bottom: 20px;
-		font-family:"Open Sans";
+		font-family: $font-stack;
 		font-weight:300;
 		font-size: 16px;
+		line-height: 1.5;
 
 		box-sizing: border-box;
 		padding:10px 20px;
@@ -36,6 +49,14 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		.desc {
+			margin: 0;
+		}
+	}
+	
+	.chooseCity {
+		margin: 0;
+		padding: 10px 20px;
 	}
 
 	.intro img {
@@ -44,7 +65,7 @@
 
 	.intro h3 {
 		margin: 0;
-		font-family: "Open Sans";
+		font-family: $font-stack;
 		font-weight: 600;
 		font-size: 25pt;
 		margin-bottom: 15px;
@@ -89,7 +110,7 @@
 		height:100%;
 		background:#fff;
 		cursor:pointer;
-		font-family:"Open Sans";
+		font-family:$font-stack;
 		font-weight:300;
 		font-size: 12px;
 		box-sizing: border-box;
@@ -110,7 +131,7 @@
 
 	.usagepicker .box h3 {
 		margin: 0;
-		font-family: "Open Sans";
+		font-family: $font-stack;
 		font-weight: 500;
 		font-size: 13pt;
 		margin-bottom: 5px;
