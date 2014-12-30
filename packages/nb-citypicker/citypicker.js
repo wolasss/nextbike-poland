@@ -15,6 +15,10 @@ Template.nbCityOption.events({
 
 Template.nbCitypickernav.helpers({
 	currentCity: function() {
+		var template = UI._templateInstance();
+		setTimeout(function(){
+			l18n.run(template.findAll('[data-i18n]'));
+		}, 100);
 		return ReactiveStore.get("nbCity") || "nocity";
 	},
 	cities: function() {
