@@ -67,6 +67,13 @@ body {
 	display: none;
 }
 
+.langpickerContainer {
+	margin-top: 10px;
+	.langpicker img {
+		width: 30px;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	
 	.alert {

@@ -27,7 +27,11 @@
     "geocodefail": "Nie można znaleźć podanego adresu",
     "empty": "Proszę podać adres",
     "usage_no_bike": "Żadna stacja nie posiada wolnych stojaków",
-    "usage_no_foot": "Żadna stacja nie posiada wolnych rowerów"    
+    "usage_no_foot": "Żadna stacja nie posiada wolnych rowerów",
+    "geodenied": "Zapytanie o pozwolenie na użycie lokalizacji zostało odrzucone.",
+    "locnotfound": "Informacja o lokalizacji nie może zostać znaleziona.",
+    "timeout": "Przekroczono czas znajdowania lokalizacji",
+    "unknown": "Wystąpił nieznany błąd."
   },
   "station": {
     "station": "Stacja",
