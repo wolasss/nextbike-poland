@@ -1,0 +1,14 @@
+<template name="nbKey">
+	<div class="key">
+		<img src="/images/icon_current.png" ironskip><span data-i18n="key.current"></span>
+		<img src="/images/icon.png" ironskip><span>{{available}}</span>
+		<img src="/images/icon_red.png" ironskip><span>{{noavailable}}</span>
+		{{> nbLangpicker}}
+	</div>
+</template>
+
+<template name="nbSettings">
+	<div id="settings">
+		<button class="settings-button"></button>
+	</div>
+</template>

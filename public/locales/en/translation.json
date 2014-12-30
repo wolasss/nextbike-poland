@@ -1,0 +1,48 @@
+{
+  "app": {
+    "title": " Velib stations - find a velib station very quickly",
+    "name": "Velib stations",
+    "desc": "Find a velib station very quickly, according to your location or given address."
+  },
+  "nav": {
+    "search": "Search",
+    "closest": "The closest to current location",
+    "placeholder": "Enter a location!!!oneone"
+  },
+  "key": {
+  	"key": "Key:",
+  	"current": "Current location",
+  	"availablebikes": "Station with available bikes",
+    "availablestands": "Station with available stands",
+  	"bonus": "Bonus station",
+  	"nobikes": "Station with no bikes",
+    "nostands": "Station with no stands"
+  },
+  "errors": {
+  	"routefail": "Route to station cannot be found",
+    "geocodefail": "Cannot find given address",
+    "empty": "Please provide an address",
+    "geodenied": "The request for Geolocation was denied.",
+    "locnotfound": "Location information is unavailable.",
+    "timeout": "The request to get user location timed out",
+    "unknown": "An unknown error occurred.",
+    "closestfail": "Can't find closest station."
+  },
+  "station": {
+  	"station": "Station",
+  	"bikes": "Available bikes:",
+  	"stands": "Available stands:",
+  	"update": "Last update:",
+  	"minutes": "minutes",
+  	"seconds": "seconds",
+  	"ago": "ago"
+  },
+  "usagepicker": {
+    "onbike": "I am on the bike right now",
+    "onfoot": "I am by foot right now",
+    "lookforstands": "And I am looking for a station with ",
+    "lookforbikes": "And I am looking for a station with ",
+    "availablestands": "available stands.",
+    "availablebikes": "available bikes"
+  }
+}

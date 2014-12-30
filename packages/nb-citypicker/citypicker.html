@@ -1,0 +1,47 @@
+<template name="intro">
+		<div class="intro">
+			<h3 data-i18n="app.name" class="title"></h3>
+			<div class="desc">
+				<span data-i18n="app.desc"></span>
+			</div>
+		</div>
+</template>
+
+<template name="nbCitypicker">
+	{{#unless city}}
+		<div id="overlay">
+			<div class="citypicker usagepicker">
+				{{> intro}}
+	
+				<h3 data-i18n="citypicker.chooseCity" class="chooseCity"></h3>
+				<div class="citiesContainer">
+					{{#each cities}}
+						{{> nbCityOption}}
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	{{/unless}}
+</template>
+
+<template name="nbCityOption">
+	<button class="btn btn-primary brn-lg citySelect">
+		<span data-i18n="cities.{{name}}"></span>
+	</button>
+</template>
+
+<template name="nbCitypickernav">
+	<div class="citypickernav">
+		<div class="dropdown">
+		  <button class="button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		    <span data-i18n="cities.{{currentCity}}"></span>
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		  	{{#each cities}}
+		    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="menuitem" data-i18n="cities.{{name}}"></a></li>
+		  	{{/each}}
+		  </ul>
+		</div>
+	</div>
+</template>

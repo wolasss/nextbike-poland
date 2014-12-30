@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "Rowery miejskie - Znajdź szybko stację veliba",
+    "name": "Rowery miejskie",
+    "desc": "Znajdź najbliższą stację w pobliżu dowolnego adresu lub najbliżej Twojej lokalizacji."
+  },
+  "nav": {
+    "search": "Szukaj",
+    "closest": "Najbliższa",
+    "placeholder": "Wpisz lokalizację"
+  },
+  "key": {
+  	"key": "Legenda:",
+  	"current": "Aktualna lokalizacja",
+  	"availablebikes": "Stacja z dostępnymi rowerami",
+    "availablestands": "Stacja z dostępnymi stojakami",
+  	"bonus": "Stacja bonusowa",
+  	"nobikes": "Stacja bez dostępnych rowerów",
+    "nostands": "Stacja bez dostępnych stojaków",
+    "available_bike" : "Dostępne stojaki",
+    "available_foot" : "Dostępne rowery",
+    "no_bike" : "Brak stojaków",
+    "no_foot" : "Brak rowerów"
+  },
+  "errors": {
+    "routefail": "Nie można znaleźć drogi do stacji",
+    "geocodefail": "Nie można znaleźć podanego adresu",
+    "empty": "Proszę podać adres",
+    "usage_no_bike": "Żadna stacja nie posiada wolnych stojaków",
+    "usage_no_foot": "Żadna stacja nie posiada wolnych rowerów"    
+  },
+  "station": {
+    "station": "Stacja",
+    "bikes": "Dostępne rowery:",
+    "stands": "Dostępne stojaki:",
+    "update": "Aktualizacja:",
+    "minutes": "minut",
+    "seconds": "sekund",
+    "ago": "temu"
+  },
+  "usagepicker": {
+    "onbike": "Jestem na rowerze",
+    "onfoot": "Jestem pieszo",
+    "lookforstands": "I szukam stacji z ",
+    "lookforbikes": "I szukam stacji z ",
+    "availablestands": "dostępnymi stojakami.",
+    "availablebikes": "dostępnymi rowerami."
+  },
+  "citypicker": {
+    "chooseCity": "Wybierz miasto:"
+  },
+  "cities": {
+    "poznan": "Poznań",
+    "warszawa": "Warszawa"
+  }
+}

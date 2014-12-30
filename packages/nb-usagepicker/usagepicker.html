@@ -1,0 +1,26 @@
+<template name="nbUsagepicker">
+	{{#if usage}}
+		<div id="overlay">
+			<div class="usagepicker">
+				<div class="bike box" name="bike">
+					<div class="image">
+						<img src="/images/bike.png">
+					</div>
+					<div class="desc">
+						<h3 data-i18n="usagepicker.onbike"></h3>
+						<span data-i18n="usagepicker.lookforstands"></span><span class="lookfor" data-i18n="usagepicker.availablestands"></span>
+					</div>
+				</div>
+				<div class="station box" name="foot">
+					<div class="image">
+						<img src="/images/foot.png">
+					</div>
+					<div class="desc">
+					<h3 data-i18n="usagepicker.onfoot"></h3>
+						<span data-i18n="usagepicker.lookforbikes"></span><span class="lookfor" data-i18n="usagepicker.availablebikes"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/if}}
+</template>

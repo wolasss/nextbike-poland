@@ -1,0 +1,30 @@
+#map {
+	margin-top:45px;
+	height: 100%;
+}
+
+.markerLabel {
+	font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+}
+
+.markerLabelSingle {
+    @extend .markerLabel;
+    padding-left: 1.5px;
+}
+
+.markerLabelDouble {
+    @extend .markerLabel;
+    padding-left: 1px;
+}
+
+@media screen and (min-width: 768px) {
+	#map {
+		margin-top:0;
+	}
+	
+
+
+}

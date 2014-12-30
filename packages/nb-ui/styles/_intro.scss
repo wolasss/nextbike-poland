@@ -1,0 +1,138 @@
+.citiesContainer {
+	text-align:center;
+}
+
+.chooseCity {
+	padding: 10px 20px;
+}
+
+.citySelect {
+	width: 60%;
+	margin-top: 15px;
+	color: #fff;
+	background-color: #66c3ec;
+	border: none;
+	padding: 10px 12px;
+	border-radius: 0px;
+}
+
+@media screen and (min-width: 768px) {
+	
+	.intro {
+		width: 500px;
+		height: 130px;
+		float: left;
+		margin-bottom: 20px;
+		font-family:"Open Sans";
+		font-weight:300;
+		font-size: 16px;
+
+		box-sizing: border-box;
+		padding:10px 20px;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.intro img {
+		width:150px;
+	}
+
+	.intro h3 {
+		margin: 0;
+		font-family: "Open Sans";
+		font-weight: 600;
+		font-size: 25pt;
+		margin-bottom: 15px;
+		color: #67b8de;
+	}
+
+	.lookfor {
+		font-weight:500;
+	}
+
+	.usagepicker {
+		position: absolute;
+		top:35%;
+		left:50%;
+		width:500px;
+		margin-left:-250px;
+		height:250px;
+		margin-top:-125px;
+	}
+
+	.langpicker-container {
+		text-align:center;
+		margin-top:265px;
+	}
+
+
+	#overlay .langpicker-container #lang-panel {
+		padding-top: 10px;
+	}
+	#overlay .langpicker-container img {
+		width:32px;
+	}
+
+	.usagepicker .station.box {
+		margin-right: 0;
+	}
+
+	.usagepicker .box {
+		border-top: 5px solid transparent;
+		float:left;
+		width:48%;
+		height:100%;
+		background:#fff;
+		cursor:pointer;
+		font-family:"Open Sans";
+		font-weight:300;
+		font-size: 12px;
+		box-sizing: border-box;
+		padding:10px 20px;
+		margin-right:20px;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.usagepicker .box:nth-of-type(1) {
+		margin-right:15px;
+	}
+
+	.usagepicker .box h3 {
+		margin: 0;
+		font-family: "Open Sans";
+		font-weight: 500;
+		font-size: 13pt;
+		margin-bottom: 5px;
+	}
+
+	.usagepicker .box .image {
+		width:100%;
+		text-align:center;
+		opacity: 0.6;
+	}
+
+	.usagepicker .box .desc {
+		width:100%;
+		text-align:center;
+	}
+
+	.usagepicker .box:hover .image {
+		opacity: 1;
+	}
+
+	.usagepicker .box:hover {
+		border-top: 5px solid #67b8de;
+	}
+
+}

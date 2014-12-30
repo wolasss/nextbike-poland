@@ -1,0 +1,24 @@
+<template name="nbNav">
+	{{> nbSearchBox}}
+	{{> nbMapnav}}
+	{{> nbCitypickernav}}
+</template>
+
+<template name="nbSearchBox">
+	<i class="fa fa-navicon mobileNavToggler"></i>
+	<div class="navHeader">
+		<input class="search" data-i18n="[placeholder]nav.placeholder;">
+		<button class="button buttonSearch" data-i18n="nav.search"></button>
+		<button class="button buttonClosest" data-i18n="nav.closest"></button>
+		<button class="button usagechange active">
+			<div class="{{currentUsage}}"></div>
+		</button>
+	</div>
+</template>
+
+<template name="nbMapnav">
+	<div class="navMap">
+		<a href="#" ironskip><img src="/images/plus.jpg" id="zoomin"></a>
+		<a href="#" ironskip><img src="/images/minus.jpg" id="zoomout"></a>
+	</div>
+</template>

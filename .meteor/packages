@@ -1,0 +1,34 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+iron:router
+wolas:alerts
+fourseven:scss
+mizzao:bootstrap-3
+nb-ui
+nb-layout
+nb-map
+nb
+nb-poznan
+mrt:reactive-store
+nb-citypicker
+nb-usagepicker
+i18next-meteor
+l18n
+nb-nav
+nb-key
+nb-stations
+nb-api
+peerlibrary:xml2js
+nb-markers
+mrt:nprogress
+nb-geolocalization
+nb-directions
+nb-geocoder
+nb-langpicker
+reactive-var
+nb-markerlabel
