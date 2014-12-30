@@ -50,6 +50,7 @@
     "chooseCity": "Wybierz miasto:"
   },
   "cities": {
+    "nocity": "Wybierz miasto",
     "poznan": "Poznań",
     "warszawa": "Warszawa"
   }

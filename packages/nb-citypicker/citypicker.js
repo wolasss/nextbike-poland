@@ -1,6 +1,6 @@
 Template.nbCitypicker.helpers({
 	city: function() {
-		return ReactiveStore.get("nbCity");
+		return ReactiveStore.get("nbCity") || "nocity";
 	},
 	cities: function() {
 		return NB.Cities.getAll();
@@ -15,7 +15,7 @@ Template.nbCityOption.events({
 
 Template.nbCitypickernav.helpers({
 	currentCity: function() {
-		return ReactiveStore.get("nbCity");
+		return ReactiveStore.get("nbCity") || "nocity";
 	},
 	cities: function() {
 		return NB.Cities.getAll();
