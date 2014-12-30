@@ -1,6 +1,6 @@
 Template.nbCitypicker.helpers({
 	city: function() {
-		return ReactiveStore.get("nbCity") || "nocity";
+		return ReactiveStore.get("nbCity");
 	},
 	cities: function() {
 		return NB.Cities.getAll();
