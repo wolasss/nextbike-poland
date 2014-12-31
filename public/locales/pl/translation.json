@@ -56,6 +56,7 @@
   "cities": {
     "nocity": "Wybierz miasto",
     "poznan": "Poznań",
-    "warszawa": "Warszawa"
+    "warszawa": "Warszawa",
+    "wroclaw": "Wrocław"
   }
 }
