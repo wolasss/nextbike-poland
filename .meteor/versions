@@ -46,6 +46,7 @@ mrt:reactive-store@0.0.1
 nb@0.0.0
 nb-api@0.0.0
 nb-autocomplete@0.0.0
+nb-cities@0.0.0
 nb-city@0.0.0
 nb-citypicker@0.0.0
 nb-directions@0.0.0
@@ -64,6 +65,7 @@ nb-stations@0.0.0
 nb-ui@0.0.0
 nb-usagepicker@0.0.0
 nb-warsaw@0.0.0
+nb-wroclaw@0.0.0
 observe-sequence@1.0.4
 ordered-dict@1.0.2
 peerlibrary:blocking@0.4.2

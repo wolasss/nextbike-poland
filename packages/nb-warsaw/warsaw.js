@@ -6,13 +6,7 @@ NB.Cities.register("warszawa", {
         	x: 52.249789,
           	y: 21.012171
         },
-        bounds: [{
-        	x: 48.911689,
-        	y: 2.4857828
-        }, {
-        	x: 48.8693712,
-        	y: 2.2836485
-        }],
+        radius: 30000,
         zoom: 13,
         disableDefaultUI: true
 	}

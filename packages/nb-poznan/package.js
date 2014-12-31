@@ -4,7 +4,7 @@ Package.describe({
 
 Package.on_use(function (api) {
 	
-	api.use(['nb', 'wolas:alerts', 'nb-ui', 'nb-city','templating'], ['client', 'server']);
+	api.use(['nb', 'nb-city'], ['client', 'server']);
 
 	api.add_files(['poznan.js'], ['client', 'server']);
 });
