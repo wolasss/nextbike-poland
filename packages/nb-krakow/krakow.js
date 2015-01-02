@@ -9,5 +9,6 @@ NB.Cities.register("krakow", {
         radius: 30000,
         zoom: 13,
         disableDefaultUI: true
-	}
+	},
+    route: "krakow"
 });

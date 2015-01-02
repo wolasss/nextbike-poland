@@ -9,5 +9,6 @@ NB.Cities.register("warszawa", {
         radius: 30000,
         zoom: 13,
         disableDefaultUI: true
-	}
+	},
+    route: "warszawa"
 });

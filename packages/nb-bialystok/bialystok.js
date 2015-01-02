@@ -9,5 +9,6 @@ NB.Cities.register("bialystok", {
         radius: 30000,
         zoom: 13,
         disableDefaultUI: true
-	}
+	},
+    route: "bialystok"
 });

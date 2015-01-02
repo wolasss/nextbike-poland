@@ -10,5 +10,6 @@ NB.Cities.register("wroclaw", {
         country: "pl",
         zoom: 14,
         disableDefaultUI: true
-	}
+	},
+    route: "wroclaw"
 });
