@@ -60,5 +60,12 @@
     "wroclaw": "Wrocław",
     "krakow": "Kraków",
     "bialystok": "Białystok"
+  },
+  "coffee": {
+    "title": "Ta aplikacja jest darmowa!",
+    "desc": "I zawsze będzie! Powstała w moim czasie wolnym, więc jeżeli z niej korzystasz możesz w podzięce kupić mi kawę lub przyczynić się do jej rozwoju. ",
+    "githublink": "Kod źródłowy znajduje się na githubie: ",
+    "paypallink": "A tutaj możesz kupić mi kawę: ",
+    "dismiss": "To bardzo urocze, ale nie pokazuj mi tego więcej."
   }
 }

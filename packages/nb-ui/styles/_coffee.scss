@@ -1,0 +1,48 @@
+.coffeeToggle {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.coffeeToggle {
+		display: block;
+	}
+}
+
+.coffeeToggle {
+	position: absolute;
+	bottom: 0;
+	background: #fff;
+	right: 50px;
+	height: 35px;
+	width: 35px;
+	color: #c2c2c2;
+	text-align: center;
+	font-size: 16pt;
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+.coffeeToggle:hover {
+	color: #487bc7;
+}
+
+.coffeeHeaderIcons {
+	width: 100%;
+	text-align: center;
+}
+
+#coffeeModal .modal-header {
+	border-bottom: none;
+}
+
+#coffeeModal .modal-body {
+	text-align: center;
+}
+
+#coffeeModal h4 {
+	margin-bottom: 10px;
+}
+
+.githubLinks {
+	margin-top: 10px;
+}
