@@ -13,6 +13,8 @@ NB.Cities = (function(){
 		          'nbFooter': {to: 'footer'}
 		        },
 		        onBeforeAction: function() {
+		        	GAnalytics.pageview('/'+route);
+		        	
 		            ReactiveStore.set("nbCity", city);
 		            this.next();
 		        } 
