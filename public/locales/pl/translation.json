@@ -59,7 +59,11 @@
     "warszawa": "Warszawa",
     "wroclaw": "Wrocław",
     "krakow": "Kraków",
-    "bialystok": "Białystok"
+    "bialystok": "Białystok",
+    "lublin": "Lublin",
+    "opole": "Opole",
+    "grodzisk": "Grodzisk Mazowiecki",
+    "trojmiasto": "Trójmiasto"
   },
   "coffee": {
     "title": "Ta aplikacja jest darmowa!",
