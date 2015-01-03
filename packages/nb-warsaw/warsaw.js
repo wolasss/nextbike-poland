@@ -1,6 +1,6 @@
 NB.Cities.register("warszawa", {
 	name: "warszawa",
-    id: 210,
+    id: [210,197],
 	mapOptions: {
 		center: {
         	x: 52.249789,

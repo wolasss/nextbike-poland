@@ -1,6 +1,6 @@
 NB.Cities.register("wroclaw", {
 	name: "wroclaw",
-    id: 187,
+    id: [148, 187],
 	mapOptions: {
 		center: {
         	x: 51.1096621,
