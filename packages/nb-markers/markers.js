@@ -86,8 +86,11 @@ NB.Markers = (function(){
 		
 		_mapReady.set(true);
 
+		_google.maps.event.addListener(_map, 'idle', renderStations);
+
+		
 		if(_markersReady.get()) {
-			google.maps.event.addListener(_map, 'idle', renderStations);
+			
 		}
 	}
 
@@ -167,8 +170,16 @@ NB.Markers = (function(){
 	};
 
 	var renderStations = function() {
+		_map = NB.Map.getInstance();
+		var bounds = _map.getBounds();
+
 		for(var i=0, len = _markers.length; i<len; i++) {
-			if(_markers[i].map != _map) _markers[i].setMap(_map);
+			var pos = _markers[i].getPosition();
+			if(pos && bounds && bounds.contains(_markers[i].getPosition())) {
+				if(_markers[i].map != _map) _markers[i].setMap(_map);
+			} else {
+				 _markers[i].setMap(null);
+			}
 		}
 	}
 
@@ -227,7 +238,6 @@ NB.Markers = (function(){
 
 	    return null;
 	}
-
 	var removeAllStations = function() {
 		for(var i=0, len=_markers.length; i<len; i++) {
 			_markers[i].setMap(null);
