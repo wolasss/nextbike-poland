@@ -4,7 +4,10 @@ NB.Cities = (function(){
 
 	var registerRoute = function(city, route){
 		Router.map(function(){
-		    this.route(city, {
+		    this.route(city, function(){
+		    	GAnalytics.pageview('/'+route);
+		    	this.render();
+		    },{
 		        path: '/'+route,
 		        layoutTemplate: 'nbLayout',
 		        template: 'nbHome',
@@ -12,9 +15,7 @@ NB.Cities = (function(){
 		          'nbHeader': {to: 'header'},
 		          'nbFooter': {to: 'footer'}
 		        },
-		        onBeforeAction: function() {
-		        	GAnalytics.pageview('/'+route);
-		        	
+		        onBeforeAction: function() {		        	
 		            ReactiveStore.set("nbCity", city);
 		            this.next();
 		        } 

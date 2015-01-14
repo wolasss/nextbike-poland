@@ -53,11 +53,12 @@ Template.nbSearchBox.events({
 		} else {
 			currentUsage = "bike";
 		}
+		GAnalytics.event("usage", "change", "nav");
 		Session.set("nbUsage", currentUsage);
 	},
 	'click .buttonClosest' : function(e, t) {
 		NProgress.start();
-		
+		GAnalytics.event("closest", "click", "nav");
 		NB.Geolocalization.getCurrentPosition(function(position){
 			var _map = NB.Map.getInstance();
 			var pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
@@ -91,6 +92,7 @@ Template.nbSearchBox.events({
 	'click .buttonSearch' : function(e, t) {
 		var input = t.find(".search");
 		if(input.value!=="") {
+			GAnalytics.event("search", "click", "nav");
 			NProgress.start();
 
 			NB.Directions.clear();
@@ -113,6 +115,7 @@ Template.nbSearchBox.events({
 	},
 	'change .search' : function(e, t) {
 		var searchInput = t.find(".search"); 
+		GAnalytics.event("search", "change", "nav");
 		setTimeout(function(){
 			var autocomplete = NB.Autocomplete.getInstance();
 			NProgress.start();

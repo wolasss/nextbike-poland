@@ -9,6 +9,7 @@ Template.nbCitypicker.helpers({
 
 Template.nbCityOption.events({
 	'click .citySelect': function(event, template) {
+		GAnalytics.event("city", "change", "main");
 		ReactiveStore.set("nbCity", this.name);
 	}
 });
@@ -29,6 +30,7 @@ Template.nbCitypickernav.helpers({
 Template.nbCitypickernav.events({
 	'click .menuitem' : function(event, template) {
 		ReactiveStore.set("nbCity", this.name);
+		GAnalytics.event("city", "change", "nav");
 		setTimeout(function(){
 			l18n.run(template.findAll('[data-i18n]'));
 		}, 100);

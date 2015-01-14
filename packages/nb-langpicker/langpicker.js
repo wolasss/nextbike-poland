@@ -1,5 +1,10 @@
 Router.map(function(){
-	this.route('lang', {
+	this.route('lang', function(){
+
+		GAnalytics.pageview();
+
+		this.render();
+	},{
 	    path: '/lang/:lang',
 	    layoutTemplate: 'nbLayout',
         template: 'nbHome',
