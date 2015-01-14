@@ -71,5 +71,11 @@
     "githublink": "Kod źródłowy znajduje się na githubie: ",
     "paypallink": "A tutaj możesz kupić mi kawę: ",
     "dismiss": "To bardzo urocze, ale nie pokazuj mi tego więcej."
+  },
+  "seo": {
+    "global": {
+      "title": "Rowery miejskie - znajdź rowery i stacje w polskich miastach.",
+      "desc": "Interaktywna mapa rowerów miejskich nextbike w Poznaniu, Warszawie, Krakowie, we Wrocławiu i wielu innych miastach." 
+    }
   }
 }

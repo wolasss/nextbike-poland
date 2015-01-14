@@ -18,7 +18,15 @@ NB.Cities = (function(){
 		        onBeforeAction: function() {		        	
 		            ReactiveStore.set("nbCity", city);
 		            this.next();
-		        } 
+		        },
+		        onAfterAction: function() {
+		        	SEO.set({
+				        title: l18n.t("seo."+city+".title"),
+				        meta: {
+				          'description': l18n.t("seo."+city+".desc")
+				        }
+				    });
+		        }
 		    });
 		}); 
 	}
@@ -26,7 +34,7 @@ NB.Cities = (function(){
 	var register = function(city, options){
 		_cities[city] = options;
 
-		if(options.route) registerRoute(city, options.route);
+		if(options.route && Meteor.isClient) registerRoute(city, options.route);
 	}
 
 	var get = function(city) {

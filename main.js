@@ -9,3 +9,15 @@ if(Meteor.isClient) {
 		});
 	}
 }
+
+Meteor.startup(function() {
+ if(Meteor.isClient){
+      return SEO.config({
+        title: l18n.t("seo.global.title"),
+        meta: {
+          'description': l18n.t("seo.global.desc")
+        },
+        rel_author: 'https://www.adamwolski.com'
+      });
+    }
+});

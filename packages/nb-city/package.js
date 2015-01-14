@@ -4,7 +4,7 @@ Package.describe({
 
 Package.on_use(function (api) {
 	
-	api.use(['nb', 'wolas:alerts', 'nb-ui', 'nb-map', 'templating', 'underscore', 'iron:router', 'datariot:ganalytics'], ['client', 'server']);
+	api.use(['nb', 'wolas:alerts', 'nb-ui', 'nb-map', 'templating', 'underscore', 'iron:router', 'datariot:ganalytics', 'manuelschoebel:ms-seo'], ['client', 'server']);
 
 	api.add_files(['city.js'], ['client', 'server']);
 });
