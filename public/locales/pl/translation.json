@@ -76,6 +76,42 @@
     "global": {
       "title": "Rowery miejskie - znajdź rowery i stacje w polskich miastach.",
       "desc": "Interaktywna mapa rowerów miejskich nextbike w Poznaniu, Warszawie, Krakowie, we Wrocławiu i wielu innych miastach." 
+    },
+    "poznan": {
+      "title": "Poznański Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Poznania. Aktualne informacje na temat dostępności rowerów."
+    },
+    "wroclaw": {
+      "title": "Wrocławski Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Wrocławia. Aktualne informacje na temat dostępności rowerów."
+    },
+    "krakow": {
+      "title": "Krakowski Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Krakowa. Aktualne informacje na temat dostępności rowerów."
+    },
+    "trojmiasto": {
+      "title": "Rower Miejski w Sopocie - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Sopotu. Aktualne informacje na temat dostępności rowerów."
+    },
+    "bialystok": {
+      "title": "BiKeR Białystok - Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Białegostoku. Aktualne informacje na temat dostępności rowerów."
+    },
+    "grodzisk": {
+      "title": "Grodziski rower miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Grodziska Mazowieckiego. Aktualne informacje na temat dostępności rowerów."
+    },
+    "opole": {
+      "title": "Rower Miejski w Opolu - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Opola. Aktualne informacje na temat dostępności rowerów."
+    },
+    "lublin": {
+      "title": "Lubelski rower miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Opola. Aktualne informacje na temat dostępności rowerów."
+    },
+    "warszawa": {
+      "title": "Veturilo - rower miejski w warszawie - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie Veturilo na mapie Warszawy. Aktualne informacje na temat dostępności rowerów."
     }
   }
 }

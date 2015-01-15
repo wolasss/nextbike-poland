@@ -17,6 +17,13 @@ Router.map(function(){
 	    		var lang = this.params.lang;
 	    		l18n.changeLang(lang);
 	    		l18n.init();
+
+	    		SEO.set({
+			        title: l18n.t("seo.global.title"),
+			        meta: {
+			          'description': l18n.t("seo.global.desc")
+			        }
+			    });
 	    		
 	    		this.next();
 	    	}

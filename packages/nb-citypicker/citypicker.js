@@ -1,3 +1,14 @@
+var changeSEOinfo = function(city) {
+
+	SEO.set({
+        title: l18n.t("seo."+city+".title"),
+        meta: {
+          'description': l18n.t("seo."+city+".desc")
+        }
+    });
+
+};
+
 Template.nbCitypicker.helpers({
 	city: function() {
 		return ReactiveStore.get("nbCity");
@@ -10,6 +21,7 @@ Template.nbCitypicker.helpers({
 Template.nbCityOption.events({
 	'click .citySelect': function(event, template) {
 		GAnalytics.event("city", "change", "main");
+		changeSEOinfo(this.name);
 		ReactiveStore.set("nbCity", this.name);
 	}
 });
@@ -31,6 +43,7 @@ Template.nbCitypickernav.events({
 	'click .menuitem' : function(event, template) {
 		ReactiveStore.set("nbCity", this.name);
 		GAnalytics.event("city", "change", "nav");
+		changeSEOinfo(this.name);
 		setTimeout(function(){
 			l18n.run(template.findAll('[data-i18n]'));
 		}, 100);
