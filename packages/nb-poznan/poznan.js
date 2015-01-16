@@ -16,6 +16,7 @@ NB.Cities.register("poznan", {
         }],
         country: "pl",
         zoom: 14,
+        maxZoom: 18,
         disableDefaultUI: true
 	},
     route: "poznan"

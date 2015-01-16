@@ -8,6 +8,8 @@ NB.Map = (function(){
           	y: 2.3470599
           },
           zoom: 14,
+          maxZoom: 20,
+          minZoom: 11,
           disableDefaultUI: true,
           id: "map"
     };
@@ -18,6 +20,8 @@ NB.Map = (function(){
 		var mapOptions = {
 	          center: new _google.maps.LatLng(_config.center.x, _config.center.y),
 	          zoom: _config.zoom,
+	          maxZoom: _config.maxZoom,
+	          minZoom: _config.minZoom,
 	          disableDefaultUI: _config.disableDefaultUI
 	    };
 	    
