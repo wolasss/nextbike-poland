@@ -36,7 +36,6 @@ NB.Map = (function(){
 			NB.Markers.init(_google);
 			NB.Nav.init(_google);
 	    } else {
-	    	console.log("zmieniamy ladnie wszystko", _config);
 	    	_map.set(mapOptions);
 	    	_map.setCenter(mapOptions.center);
 	    }
