@@ -5,6 +5,6 @@ Package.describe({
 Package.on_use(function (api) {
 	api.use(['jquery', 'underscore'], 'client');
 
-  api.add_files('i18next-1.7.4.js', ['client']);
+  api.add_files('i18next-1.7.7.js', ['client']);
 });
 
