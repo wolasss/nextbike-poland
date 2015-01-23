@@ -1,45 +1,52 @@
 NB.Nav = (function(){
-	var _google, _zoomin, _zoomout, _map;
+	var _google, _zoomin, _zoomout, _map, init, buttonsInit;
+
+	init = function(google){
+		_google = google;
+		_map = NB.Map.getInstance();
+		
+		if(_zoomout) {
+			_google.maps.event.addDomListener(_zoomout, 'click', function() {
+				var currentZoomLevel = _map.getZoom();
+				
+				if(currentZoomLevel !== 0) {
+					_map.setZoom(currentZoomLevel - 1);
+				}
+			});
+		}
+		
+		if(_zoomin) {
+			_google.maps.event.addDomListener(_zoomin, 'click', function() {
+				var currentZoomLevel = _map.getZoom();
+				
+				if(currentZoomLevel !== 21) {
+					_map.setZoom(currentZoomLevel + 1);
+				}
+			});
+		}
+		
+	};
+
+	buttonsInit = function(zoomin, zoomout) {
+		_zoomin = zoomin;
+		_zoomout = zoomout;
+	};
 
 	return {
-		init: function(google){
-			_google = google;
-			_map = NB.Map.getInstance();
-			this.initializeButtons();
-		},
-		initializeButtons : function(zoomin, zoomout) {
-			if(zoomin && zoomout) {
-				_zoomin = zoomin;
-				_zoomout = zoomout;
-			}
-
-			if(_google) {
-				_google.maps.event.addDomListener(_zoomout, 'click', function() {
-				   var currentZoomLevel = _map.getZoom();
-				   if(currentZoomLevel != 0){
-				     _map.setZoom(currentZoomLevel - 1);}     
-				});
-
-				_google.maps.event.addDomListener(_zoomin, 'click', function() {
-				   var currentZoomLevel = _map.getZoom();
-				   if(currentZoomLevel != 21){
-				     _map.setZoom(currentZoomLevel + 1);}
-				});
-			}
-			
-		}
-	}
+		init: init,
+		buttonsInit : buttonsInit
+	};
 })();
 
 Template.nbMapnav.rendered = function() {
-	NB.Nav.initializeButtons(this.find('#zoomin'), this.find('#zoomout'));
-}
+	NB.Nav.buttonsInit(this.find('.zoom-in'), this.find('.zoom-out'));
+};
 
 Template.nbSearchBox.helpers({
 	currentUsage: function() {
 		return Session.get("nbUsage");
 	}
-})
+});
 
 Template.nbSearchBox.events({
 	'click .mobileNavToggler': function(event, template) {

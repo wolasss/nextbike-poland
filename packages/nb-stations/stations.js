@@ -14,7 +14,7 @@ if(Meteor.isClient) {
 		
 		cursor.observe({
 			changed: function(document) {
-				NB.Markers.handleStation(document);
+				NB.Markers.stationChanged(document);
 			},
 			removed: function(document) {
 				//NB.Markers.removeStation(document)

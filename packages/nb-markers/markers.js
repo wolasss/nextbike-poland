@@ -157,7 +157,7 @@ NB.Markers = (function(){
 	  	return marker;
 	}
 
-	var handleStation = function(station) {
+	var stationChanged = function(station) {
 		var markerTitles = _markers.map(function(e) { return e.title; });
 		if( markerTitles ) {
 			var marker_pos = markerTitles.indexOf(station.name);
@@ -259,7 +259,7 @@ NB.Markers = (function(){
 		stations: _stations,
 		createMarkers: 	createMarkers,
 		renderStations: renderStations,
-		handleStation: handleStation,
+		stationChanged: stationChanged,
 		removeStation: removeStation,
 		removeAllStations: removeAllStations,
 		findClosestMarker: findClosestMarker,

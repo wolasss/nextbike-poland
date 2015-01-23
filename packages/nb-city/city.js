@@ -17,15 +17,15 @@ NB.Cities = (function(){
 				},
 				onBeforeAction: function() {
 					ReactiveStore.set("nbCity", city);
-					this.next();
-				},
-				onAfterAction: function() {
+
 					SEO.set({
 						title: l18n.t("seo."+city+".title"),
 						meta: {
 							'description': l18n.t("seo."+city+".desc")
 						}
 					});
+
+					this.next();
 				}
 			});
 		});
