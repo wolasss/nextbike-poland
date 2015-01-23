@@ -8,7 +8,6 @@ blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.4
-chfritz:spiderable@1.0.5
 coffeescript@1.0.5
 datariot:ganalytics@0.2.1
 ddp@1.0.14
@@ -87,6 +86,7 @@ nb-usagepicker@0.0.0
 nb-warsaw@0.0.0
 nb-wroclaw@0.0.0
 observe-sequence@1.0.4
+ongoworks:spiderable@1.0.7
 ordered-dict@1.0.2
 peerlibrary:blocking@0.4.2
 peerlibrary:xml2js@0.4.4-2
