@@ -2,9 +2,14 @@ NB.Directions = (function(){
 	
 	var directionsService = null,
 		directionsDisplay = null,
-		_google, _map;
+		_google,
+		_map,
+		init,
+		calculateRoute,
+		getInstance,
+		clear;
 
-	var init = function(selector, google){
+	init = function(selector, google){
 		_google = google;
 		_map = NB.Map.getInstance();
 
@@ -16,43 +21,47 @@ NB.Directions = (function(){
 		directionsDisplay.setMap(_map);
 	};
 
-	var calculateRoute = function(start, end) {
+	calculateRoute = function(start, end) {
 
 		var request = {
-		    origin: start,
-		    destination: end,
-		    travelMode: _google.maps.TravelMode.WALKING
+			origin: start,
+			destination: end,
+			travelMode: _google.maps.TravelMode.WALKING
 		};
 
 		directionsService.route(request, function(response, status) {
-		    if (status == _google.maps.DirectionsStatus.OK) {
-		    	_response = response;
-		    	directionsDisplay.setDirections(response);
-		    	var textDirections = document.querySelector('.directions');
-		    	textDirections.style.display = 'block';
-		    } else {
-		    	Alerts.error(i18n.t("errors.routefail"));
-		    }
+			if (status == _google.maps.DirectionsStatus.OK) {
+				_response = response;
+				directionsDisplay.setDirections(response);
+				var textDirections = document.querySelector('.directions');
+				textDirections.style.display = 'block';
+			} else {
+				Alerts.error(i18n.t("errors.routefail"));
+			}
 		});
 
 		directionsDisplay.setMap(_map);
-	}
+	};
+
+	getInstance = function() {
+		return directionsDisplay;
+	};
+
+	clear = function() {
+		directionsDisplay.setMap(null);
+	};
 
 	return {
 		init: init,
 		calculateRoute: calculateRoute,
-		getInstance: function() {
-			return directionsDisplay;
-		},
-		clear: function() {
-			directionsDisplay.setMap(null);
-		}
-	}
+		getInstance: getInstance,
+		clear: clear
+	};
 })();
 
 Template.nbDirections.events({
 	'click .close' : function(e, t) {
 		var textDirections = t.find(".directions");
-	    	textDirections.style.display = 'none';
+			textDirections.style.display = 'none';
 	}
 });

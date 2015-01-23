@@ -1,11 +1,8 @@
 NB.Autocomplete = (function(){
 	
-	var autocomplete;
-	var _google;
+	var _google, autocomplete, init, getInstance;
 
-
-	var init = function(google, selector, config) {
-		
+	init = function(google, selector, config) {
 		_google = google;
 
 		var input = document.querySelector(selector);
@@ -15,11 +12,15 @@ NB.Autocomplete = (function(){
 			radius: config.radius,
 			componentRestrictions: {country: config.country}
 		});
-	}
+	};
+
+	getInstance = function() {
+		return autocomplete;
+	};
+
 	return {
 		init: init,
-		getInstance: function() {
-			return autocomplete;
-		}
-	}
+		getInstance: getInstance
+	};
+	
 })();

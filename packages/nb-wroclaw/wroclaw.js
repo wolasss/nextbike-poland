@@ -3,13 +3,13 @@ NB.Cities.register("wroclaw", {
     id: [148, 187],
 	mapOptions: {
 		center: {
-        	x: 51.1096621,
-          	y: 17.0336957
+            x: 51.1096621,
+            y: 17.0336957
         },
         radius: 25000,
         country: "pl",
         zoom: 14,
         disableDefaultUI: true
 	},
-    route: "wroclaw"
+    route: "/wroclaw"
 });

@@ -1,15 +1,18 @@
 NB.InfoWindow = (function(){
-	var infoWindow = null, _google;
+	var infoWindow = null, _google, init, getInstance;
 
-	var init = function(google){
+	init = function(google){
 		_google = google;
 		infoWindow = new _google.maps.InfoWindow();
 	};
 
+	getInstance = function() {
+		return infoWindow;
+	};
+
 	return {
 		init: init,
-		getInstance: function() {
-			return infoWindow;
-		}
-	}
+		getInstance: getInstance
+	};
+
 })();

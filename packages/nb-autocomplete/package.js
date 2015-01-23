@@ -3,8 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-
-	api.use(['nb','underscore', 'templating', 'nb-nav'], ['client']);
+	api.use(['nb'], ['client']);
 
 	api.add_files(['autocomplete.js'], ['client']);
 });

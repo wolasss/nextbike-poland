@@ -14,16 +14,13 @@ if(Meteor.isClient) {
 		
 		cursor.observe({
 			changed: function(document) {
-				console.log("changed:", document)
 				NB.Markers.handleStation(document);
 			},
 			removed: function(document) {
-				console.log("removed", document);
 				//NB.Markers.removeStation(document)
 			}
-		})
+		});
 	});
-
 	
 }
 
