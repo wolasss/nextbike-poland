@@ -4,7 +4,7 @@ if(Meteor.isClient) {
 	var cursor;
 
 	Tracker.autorun(function(){
-		var sub = Meteor.subscribe("stations", ReactiveStore.get("nbCity"));
+		var sub = Meteor.subscribe("stations", ReactiveStore.get("nbCity")||"");
 
 		if(sub.ready()) {
 			NB.Markers.createMarkers();
@@ -26,6 +26,7 @@ if(Meteor.isClient) {
 
 if(Meteor.isServer) {
 	Meteor.publish('stations', function(city) {
+		check(city, String);
 		return NB.Stations.find({city: city});
 	});
 }

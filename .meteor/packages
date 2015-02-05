@@ -47,3 +47,5 @@ manuelschoebel:ms-seo
 gadicohen:phantomjs
 mike:mocha
 ongoworks:spiderable
+fastclick
+audit-argument-checks

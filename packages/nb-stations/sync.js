@@ -39,6 +39,6 @@ Sync = function() {
 
 		});
 	});
-}
+};
 
 Sync();

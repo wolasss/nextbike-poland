@@ -42,12 +42,6 @@ Template.nbMapnav.rendered = function() {
 	NB.Nav.buttonsInit(this.find('.zoom-in'), this.find('.zoom-out'));
 };
 
-Template.nbSearchBox.helpers({
-	currentUsage: function() {
-		return Session.get("nbUsage");
-	}
-});
-
 Template.nbSearchBox.events({
 	'click .mobileNavToggler': function(event, template) {
 		var nav = template.find('.navHeader');

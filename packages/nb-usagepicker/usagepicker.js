@@ -1,3 +1,7 @@
+Template.registerHelper("currentUsage", function(){
+	return Session.get("nbUsage");
+});
+
 Template.nbUsagepicker.helpers({
 	usage: function() {
 		return (ReactiveStore.get("nbCity") && !Session.get("nbUsage"));
