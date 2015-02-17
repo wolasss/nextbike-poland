@@ -117,7 +117,10 @@ Template.nbSearchBox.events({
 			});
 			NProgress.done();
 		} else {
-		    Session.set("ErrorMessage", i18n.t("errors.empty"))	
+		    $(input).addClass('animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		    	$(this).removeClass('animated shake');
+		    })
+
 		}
 	},
 	'change .search' : function(e, t) {
