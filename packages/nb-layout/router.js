@@ -1,5 +1,8 @@
 Router.map(function(){
-    this.route('home', {
+    this.route('home', function(){
+        GAnalytics.pageview('/');
+        this.render();
+    }, {
         path: '/',
         layoutTemplate: 'nbLayout',
         template: 'nbHome',
