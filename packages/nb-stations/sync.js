@@ -42,3 +42,7 @@ Sync = function() {
 }
 
 Sync();
+
+if(Meteor.settings.sync) {
+	setInterval(Sync, Meteor.settings.sync.interval);
+}
