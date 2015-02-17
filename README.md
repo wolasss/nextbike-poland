@@ -1,14 +1,14 @@
 # GdzieMojRower.pl
 
-![Preview screenshot]()
+![Preview screenshot](https://raw.githubusercontent.com/wolasss/nextbike-poland/master/screen.png)
 
-### Co to robi? 
+### Jak to działa? 
 
 Aplikacja pozwala podglądać system rowerów miejskich nextbike (jedyne rowery miejskie w polskich miastach) na interaktywnej mapie. Dokładność danych jest uzależniona od API (to chyba za duże słowo) udostępnionego przez nextbike. 
 
 ### Motywacja
 
-Pomysł na aplikację zrodził się kiedy mieszkałem w Paryżu i zachwycony tamtejszym systemem rowerów miejskich (velib) postanowiłem zrobić aplikację, która ułatwi mi trochę życie i poruszanie się po mieście bowiem istniejące aplikacje były bardzo nędzne. Ta aplikacja, to fork aplikacji dedykowanej velibowi. 
+Pomysł na aplikację zrodził się kiedy mieszkałem w Paryżu i zachwycony tamtejszym systemem rowerów miejskich *velib* postanowiłem zrobić aplikację, która ułatwi mi trochę życie i poruszanie się po mieście bowiem istniejące aplikacje były niewystarczające. Ta aplikacja, to fork aplikacji dedykowanej velibowi. 
 
 ### Roadmap 
 
