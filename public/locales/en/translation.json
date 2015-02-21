@@ -6,8 +6,8 @@
   },
   "nav": {
     "search": "Search",
-    "closest": "The closest to current location",
-    "placeholder": "Enter a location!!!oneone"
+    "closest": "The closest to me",
+    "placeholder": "Enter a location!"
   },
   "key": {
   	"key": "Key:",
@@ -16,7 +16,11 @@
     "availablestands": "Station with available stands",
   	"bonus": "Bonus station",
   	"nobikes": "Station with no bikes",
-    "nostands": "Station with no stands"
+    "nostands": "Station with no stands",
+    "available_bike" : "Available stands",
+    "available_foot" : "Available bikes",
+    "no_bike" : "No stands",
+    "no_foot" : "No bikes"
   },
   "errors": {
   	"routefail": "Route to station cannot be found",
@@ -26,7 +30,9 @@
     "locnotfound": "Location information is unavailable.",
     "timeout": "The request to get user location timed out",
     "unknown": "An unknown error occurred.",
-    "closestfail": "Can't find closest station."
+    "closestfail": "Can't find closest station.",
+    "usage_no_bike": "No station has available stands",
+    "usage_no_foot": "No station has available bikes"
   },
   "station": {
   	"station": "Station",
@@ -44,5 +50,69 @@
     "lookforbikes": "And I am looking for a station with ",
     "availablestands": "available stands.",
     "availablebikes": "available bikes"
+  },
+  "citypicker": {
+    "chooseCity": "Choose city:"
+  },
+  "cities": {
+    "nocity": "Choose city",
+    "poznan": "Poznan",
+    "warszawa": "Warsaw",
+    "wroclaw": "Wroclaw",
+    "krakow": "Cracow",
+    "bialystok": "Bialystok",
+    "lublin": "Lublin",
+    "opole": "Opole",
+    "grodzisk": "Grodzisk Mazowiecki",
+    "trojmiasto": "Tricity"
+  },
+  "coffee": {
+    "title": "This app is free",
+    "desc": "And it always will! It was created in my free time, so if you enjoy it you can always buy me a coffee or contribute to the development.",
+    "githublink": "Source code is hosted on github: ",
+    "paypallink": "And here you can buy me a coffee: ",
+    "dismiss": "It's sweet and all, but don't show me this again."
+  },
+  "seo": {
+    "global": {
+      "title": "City bikes - find bikes and stations in polish cities.",
+      "desc": "Interactive map of nextbike bikes in Poznan, Warsaw, Cracow, Wroclaw and other polish cities." 
+    },
+    "poznan": {
+      "title": "Poznański Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Poznania. Aktualne informacje na temat dostępności rowerów."
+    },
+    "wroclaw": {
+      "title": "Wrocławski Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Wrocławia. Aktualne informacje na temat dostępności rowerów."
+    },
+    "krakow": {
+      "title": "Krakowski Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Krakowa. Aktualne informacje na temat dostępności rowerów."
+    },
+    "trojmiasto": {
+      "title": "Rower Miejski w Sopocie - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Sopotu. Aktualne informacje na temat dostępności rowerów."
+    },
+    "bialystok": {
+      "title": "BiKeR Białystok - Rower Miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Białegostoku. Aktualne informacje na temat dostępności rowerów."
+    },
+    "grodzisk": {
+      "title": "Grodziski rower miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Grodziska Mazowieckiego. Aktualne informacje na temat dostępności rowerów."
+    },
+    "opole": {
+      "title": "Rower Miejski w Opolu - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Opola. Aktualne informacje na temat dostępności rowerów."
+    },
+    "lublin": {
+      "title": "Lubelski rower miejski - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie na mapie Opola. Aktualne informacje na temat dostępności rowerów."
+    },
+    "warszawa": {
+      "title": "Veturilo - rower miejski w warszawie - znajdź stacje na interaktywnej mapie",
+      "desc": "Znajdź stacje lub dostępne rowery miejskie Veturilo na mapie Warszawy. Aktualne informacje na temat dostępności rowerów."
+    }
   }
 }
