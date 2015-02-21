@@ -6,7 +6,7 @@
   },
   "nav": {
     "search": "Szukaj",
-    "closest": "Najbliższa",
+    "closest": "Najbliżej mnie",
     "placeholder": "Wpisz lokalizację"
   },
   "key": {
@@ -35,8 +35,8 @@
   },
   "station": {
     "station": "Stacja",
-    "bikes": "Dostępne rowery:",
-    "stands": "Dostępne stojaki:",
+    "bikes": "Rowery:",
+    "stands": "Stojaki:",
     "update": "Aktualizacja:",
     "minutes": "minut",
     "seconds": "sekund",

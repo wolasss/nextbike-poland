@@ -56,6 +56,7 @@ mongo@1.0.11
 mongo-livedata@1.0.7
 mrt:nprogress@0.1.0
 mrt:reactive-store@0.0.1
+natestrauser:animate-css@3.1.2
 nb@0.0.0
 nb-api@0.0.0
 nb-autocomplete@0.0.0

@@ -145,7 +145,7 @@ NB.Markers = (function(){
 			var info = NB.InfoWindow.getInstance();
 			//add info about last sync
 
-		    info.setContent("<strong>"+i18n.t("station.station")+" "+marker.number+"</strong><p> "+marker.name+" </p><p>"+i18n.t("station.bikes")+" "+marker.bikes+"<br>"+i18n.t("station.stands")+" "+marker.stands+"<br>");
+		    info.setContent("<div class=\"infowindow\"><strong>"+marker.number+" - "+marker.name+"</strong><p>"+i18n.t("station.bikes")+" "+marker.bikes+"<br>"+i18n.t("station.stands")+" "+marker.stands+"</div>");
 		    info.open(_map, marker);
 		});
 		
