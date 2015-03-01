@@ -47,16 +47,6 @@ Template.nbSearchBox.events({
 		var nav = template.find('.navHeader');
 		$(nav).toggle();
 	},
-	'click .usagechange' : function(event, template) {
-		var currentUsage = Session.get("nbUsage");
-		if(currentUsage=="bike") {
-			currentUsage = "foot";
-		} else {
-			currentUsage = "bike";
-		}
-		GAnalytics.event("usage", "change", "nav");
-		Session.set("nbUsage", currentUsage);
-	},
 	'click .buttonClosest' : function(e, t) {
 		NProgress.start();
 		GAnalytics.event("closest", "click", "nav");

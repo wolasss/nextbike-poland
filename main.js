@@ -8,6 +8,8 @@ if(Meteor.isClient) {
 			}
 		});
 	}
+
+	Session.set("nbUsage", "foot");
 }
 
 Meteor.startup(function() {
@@ -21,3 +23,4 @@ Meteor.startup(function() {
       });
     }
 });
+

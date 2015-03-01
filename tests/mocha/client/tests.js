@@ -1,40 +1,6 @@
 if (!(typeof MochaWeb === 'undefined')){
     MochaWeb.testOnly(function(){
 
-        describe("Usage selector", function(){
-            before(function(done){
-                Session.set("nbUsage", null);
-                done();
-            });
-
-            it("should show usage picker in the nav section", function(){
-                chai.assert($(".navHeader .usagechange").length);
-            });
-
-            it("should show ussage picker in the main menu", function(){
-                if(!ReactiveStore.get("nbCity")) {
-                    chai.assert($("#overlay .usagepicker").length);
-                }
-            });
-
-            it("should change usage picker view in nav section when chaning usage", function(){
-                
-                Session.set("nbUsage", "bike");
-                Meteor.defer(function(){
-                    chai.assert.equal($('.navHeader .usagepicker div').hasClass('bike'),true);
-                    chai.assert.equal($('.navHeader .usagepicker div').hasClass('foot'),false);
-                });
-
-                Session.set("nbUsage", "foot");
-                Meteor.defer(function(){
-                    chai.assert.equal($('.navHeader .usagepicker div').hasClass('foot'),true);
-                    chai.assert.equal($('.navHeader .usagepicker div').hasClass('bike'),false);
-                });
-                
-            });
-
-        });
-
         describe("coffe window", function(){
             it("should show/disable coffee button", function(){
                 
