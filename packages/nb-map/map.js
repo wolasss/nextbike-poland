@@ -11,8 +11,6 @@ NB.Map = (function(){
     };
 
 	init = function() {
-		console.log("map init"); debugger;
-
 		_config.center = new google.maps.LatLng(_config.center.x, _config.center.y);
 
 		if(!_initialized) {
@@ -34,6 +32,7 @@ NB.Map = (function(){
 	};
 
 	load = function(lang, options) {
+		console.log("map load"); debugger;
 		$.extend(true, _config, options);
 
 		if(!_initialized) {
