@@ -11,6 +11,8 @@ NB.Map = (function(){
     };
 
 	init = function() {
+		console.log("map init"); debugger;
+		
 		_config.center = new google.maps.LatLng(_config.center.x, _config.center.y);
 
 		if(!_initialized) {
