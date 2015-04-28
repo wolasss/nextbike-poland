@@ -32,7 +32,7 @@ NB.Map = (function(){
 	};
 
 	load = function(lang, options) {
-		console.log("map load"); debugger;
+		console.log("map load");
 		$.extend(true, _config, options);
 
 		if(!_initialized) {
