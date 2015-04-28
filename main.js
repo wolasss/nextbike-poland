@@ -2,7 +2,7 @@ if(Meteor.isClient) {
 	Template.nbHome.rendered = function() {
 		Deps.autorun(function(){
 			var city = ReactiveStore.get("nbCity");
-			var lang = TAPi18n.getLanguage();	
+			var lang = ReactiveStore.get("nbLang");	
 			
 			console.log(city, lang);
 
