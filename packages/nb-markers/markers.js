@@ -113,10 +113,13 @@ NB.Markers = (function(){
 			labelAnchor,
 			labelClass;
 
+		labelAnchor = new google.maps.Point(5, 26);
+
 		//figure out weather amount is single digit or double
-		if(parseInt(amount,10)/10 < 1) {
-			labelAnchor = new google.maps.Point(5, 26);
+		if (parseInt(amount,10)/10 < 1 && amount !== "5+") {
             labelClass =  "markerLabelSingle"; // the CSS class for the label
+		} else if (amount === "5+") {
+            labelClass =  "markerLabelFivePlus";
 		} else {
 			labelAnchor = new google.maps.Point(8, 26);
             labelClass = "markerLabelDouble"; // the CSS class for the label
