@@ -126,6 +126,8 @@ NB.Markers = (function(){
 		}
 
 		var MarkerWithLabel = NB.Markerlabel.MarkerWithLabel();
+		
+		console.log(station);
 
 		var marker = new MarkerWithLabel({
 			position: new _google.maps.LatLng(station.lat, station.lng),
@@ -139,7 +141,8 @@ NB.Markers = (function(){
 			labelContent: amount,
             labelAnchor: labelAnchor,
             labelClass: labelClass, // the CSS class for the label
-            labelInBackground: false
+            labelInBackground: false,
+            maxWidth: 300
 	  	});
 
 	  	marker = changeIcon(marker);
@@ -147,8 +150,7 @@ NB.Markers = (function(){
 	  	_google.maps.event.addListener(marker, 'click', function() {
 			var info = NB.InfoWindow.getInstance();
 			//add info about last sync
-
-		    info.setContent("<div class=\"infowindow\"><strong>"+marker.number+" - "+marker.name+"</strong><p>"+i18n.t("station.bikes")+" "+marker.bikes+"<br>"+i18n.t("station.stands")+" "+marker.stands+"</div>");
+		    info.setContent("<strong>"+marker.number+" - "+marker.name+"</strong><br>"+i18n.t("station.bikes")+" "+marker.bikes+" / "+marker.stands+"");
 		    info.open(_map, marker);
 		});
 		
