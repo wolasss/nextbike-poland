@@ -127,8 +127,6 @@ NB.Markers = (function(){
 
 		var MarkerWithLabel = NB.Markerlabel.MarkerWithLabel();
 		
-		console.log(station);
-
 		var marker = new MarkerWithLabel({
 			position: new _google.maps.LatLng(station.lat, station.lng),
 			map: _map,
@@ -150,7 +148,7 @@ NB.Markers = (function(){
 	  	_google.maps.event.addListener(marker, 'click', function() {
 			var info = NB.InfoWindow.getInstance();
 			//add info about last sync
-		    info.setContent("<strong>"+marker.number+" - "+marker.name+"</strong><br>"+i18n.t("station.bikes")+" "+marker.bikes+" / "+marker.stands+"");
+		    info.setContent("<strong>"+marker.number+" - "+marker.name+"</strong><br>"+TAPi18n.__("station.bikes")+" "+marker.bikes+"/"+marker.stands+"");
 		    info.open(_map, marker);
 		});
 		

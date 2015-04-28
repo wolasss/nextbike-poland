@@ -12,10 +12,8 @@ Router.map(function(){
         },
         onBeforeAction: function() {
             Alerts.clear(null);
-            l18n.changeLang("pl");
-            l18n.init();
                
-            this.next();     
+            this.next();
         }
     });
 });

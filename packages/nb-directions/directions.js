@@ -36,7 +36,7 @@ NB.Directions = (function(){
 				var textDirections = document.querySelector('.directions');
 				textDirections.style.display = 'block';
 			} else {
-				Alerts.error(i18n.t("errors.routefail"));
+				Alerts.error(TAPi18n.__("errors.routefail"));
 			}
 		});
 

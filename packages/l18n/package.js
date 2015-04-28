@@ -3,10 +3,9 @@ Package.describe({
 });
 
 Package.on_use(function(api){
-  api.use(['jquery','i18next-meteor','tracker','templating', 'underscore', 'mrt:reactive-store'], 'client');
+  api.use(['jquery','tap:i18n','tracker','templating', 'underscore', 'mrt:reactive-store', 'manuelschoebel:ms-seo'], 'client');
 
-  api.add_files(['l18n.js', 'main.js'], 'client');
-  api.add_files('startup.js', 'client');
+  api.add_files(['l18n.js'], 'client');
 
   api.export && api.export('l18n');
 });

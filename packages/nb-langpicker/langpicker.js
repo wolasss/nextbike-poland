@@ -15,13 +15,12 @@ Router.map(function(){
 	    onBeforeAction: function() {
 	    	if(this.params.lang.match(/\w\w/)) {
 	    		var lang = this.params.lang;
-	    		l18n.changeLang(lang);
-	    		l18n.init();
+	    		ReactiveStore.set("nbLang", lang);
 
 	    		SEO.set({
-			        title: l18n.t("seo.global.title"),
+			        title: TAPi18n.__("seo.global.title"),
 			        meta: {
-			          'description': l18n.t("seo.global.desc")
+			          'description': TAPi18n.__("seo.global.desc")
 			        }
 			    });
 	    		

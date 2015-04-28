@@ -1,8 +1,8 @@
 {
   "app": {
-    "title": " Velib stations - find a velib station very quickly",
-    "name": "Velib stations",
-    "desc": "Find a velib station very quickly, according to your location or given address."
+    "title": "City bikes - find a city bike station very quickly",
+    "name": "City bikes stations",
+    "desc": "Find a city bikes station very quickly, according to your location or given address."
   },
   "nav": {
     "search": "Search",

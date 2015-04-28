@@ -32,7 +32,7 @@ NB.GeoCoder = (function(){
 
 				cb.call(null);
 			} else {
-				Alerts.error(i18n.t("errors.geocodefail"));
+				Alerts.error(TAPi18n.__("errors.geocodefail"));
 			}
 		});
 	};

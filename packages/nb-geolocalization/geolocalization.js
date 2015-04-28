@@ -13,16 +13,16 @@ NB.Geolocalization = (function(){
 	{
 		switch(error.code) {
 			case error.PERMISSION_DENIED:
-				Alerts.error(i18n.t("errors.geodenied"));
+				Alerts.error(TAPi18n.__("errors.geodenied"));
 				break;
 			case error.POSITION_UNAVAILABLE:
-				Alerts.error(i18n.t("errors.locnotfound"));
+				Alerts.error(TAPi18n.__("errors.locnotfound"));
 				break;
 			case error.TIMEOUT:
-				Alerts.error(i18n.t("errors.timeout"));
+				Alerts.error(TAPi18n.__("errors.timeout"));
 				break;
 			case error.UNKNOWN_ERROR:
-				Alerts.error(i18n.t("errors.unknown"));
+				Alerts.error(TAPi18n.__("errors.unknown"));
 				break;
 		}
 		

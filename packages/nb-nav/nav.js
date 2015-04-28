@@ -72,7 +72,7 @@ Template.nbSearchBox.events({
 				NB.Directions.calculateRoute(NB.Markers.getCurrentPosition().position, dest.position);
 			} else {
 				//throw an error that there is no bikes/stations
-				Alerts.error(l18n.t("errors.usage_no_"+Session.get("nbUsage")));
+				Alerts.error(TAPi18n.__("errors.usage_no_"+Session.get("nbUsage")));
 			}
 
 			_map.setCenter(pos);
@@ -94,7 +94,7 @@ Template.nbSearchBox.events({
 			NB.GeoCoder.getGeocode(document.querySelector(".search").value, function(){
 				var dest = NB.Markers.findClosestMarker();
 				if(!dest) {
-					Alerts.error(l18n.t("errors.usage_no_"+Session.get("nbUsage")));
+					Alerts.error(TAPi18n.__("errors.usage_no_"+Session.get("nbUsage")));
 				} else {
 					NB.Directions.calculateRoute(NB.Markers.getCurrentPosition().position, dest.position);
 				}
@@ -125,7 +125,7 @@ Template.nbSearchBox.events({
 				NB.GeoCoder.getGeocode(input, function(){
 					var dest = NB.Markers.findClosestMarker();
 					if(!dest) {
-						Alerts.error(l18n.t("errors.usage_no_"+Session.get("nbUsage")));
+						Alerts.error(TAPi18n.__("errors.usage_no_"+Session.get("nbUsage")));
 					} else {
 						NB.Directions.calculateRoute(NB.Markers.getCurrentPosition().position, dest.position);
 					}

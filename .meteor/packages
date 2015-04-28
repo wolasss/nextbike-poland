@@ -16,7 +16,6 @@ nb
 nb-poznan
 mrt:reactive-store
 nb-citypicker
-i18next-meteor
 l18n
 nb-nav
 nb-key
@@ -49,3 +48,4 @@ ongoworks:spiderable
 fastclick
 natestrauser:animate-css
 audit-argument-checks
+tap:i18n

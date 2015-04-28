@@ -19,9 +19,9 @@ NB.Cities = (function(){
 					ReactiveStore.set("nbCity", city);
 
 					SEO.set({
-						title: l18n.t("seo."+city+".title"),
+						title: TAPi18n.__("seo."+city+".title"),
 						meta: {
-							'description': l18n.t("seo."+city+".desc")
+							'description': TAPi18n.__("seo."+city+".desc")
 						}
 					});
 
