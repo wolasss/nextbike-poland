@@ -12,7 +12,7 @@ NB.Map = (function(){
 
 	init = function() {
 		console.log("map init"); debugger;
-		
+
 		_config.center = new google.maps.LatLng(_config.center.x, _config.center.y);
 
 		if(!_initialized) {
@@ -39,7 +39,7 @@ NB.Map = (function(){
 		if(!_initialized) {
 			var script = document.createElement('script');
 				script.type = 'text/javascript';
-				script.src = 'https://maps.googleapis.com/maps/api/js?v=&v=3.15&libraries=places&sensor=false&callback=NB.Map.initialize';
+				script.src = 'https://maps.googleapis.com/maps/api/js?v=&v=3.20&libraries=places&sensor=false&callback=NB.Map.initialize';
 			
 			if (lang) {
 				script.src += '&language=' + lang;
