@@ -1,5 +1,5 @@
 NB.Map = (function(){
-	var _loading = false;
+	var _loading = false, _loaded = false;
 	var _map, _config, _initialized = false, init, load, getInstance;
 
 	_config = {
@@ -36,10 +36,11 @@ NB.Map = (function(){
 	};
 
 	load = function(lang, options) {
-		console.log("map load", _initialized);
+		console.log("map load", _loaded, _initialized);
 		$.extend(true, _config, options);
 
-		if(!_initialized) {
+		if(!_loaded) {
+			_loaded = true;
 			console.log("adding script");
 			var script = document.createElement('script');
 				script.type = 'text/javascript';
