@@ -4,6 +4,8 @@ if(Meteor.isClient) {
 			var city = ReactiveStore.get("nbCity");
 			var lang = ReactiveStore.get("nbLang") || "pl";
 			
+			console.log(ReactiveStore.get("nbCity"), ReactiveStore.get("nbLang"));
+
 			if(city && lang) {
 				NB.Cities.load(lang, city);
 			}
