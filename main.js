@@ -1,14 +1,12 @@
 if(Meteor.isClient) {
 	Template.nbHome.rendered = function() {
-		var initialized = false;
 
 		Deps.autorun(function(){
 			var city = ReactiveStore.get("nbCity");
 			var lang = ReactiveStore.get("nbLang") || "pl";
 			
-			if(city && lang && !initialized) {
+			if(city && lang) {
 				NB.Cities.load(lang, city);
-				initialized = true;
 			}
 		});
 	};

@@ -32,10 +32,11 @@ NB.Map = (function(){
 	};
 
 	load = function(lang, options) {
-		console.log("map load");
+		console.log("map load", _initialized);
 		$.extend(true, _config, options);
 
 		if(!_initialized) {
+			console.log("adding script");
 			var script = document.createElement('script');
 				script.type = 'text/javascript';
 				script.src = 'https://maps.googleapis.com/maps/api/js?v=&v=3.20&libraries=places&sensor=false&callback=NB.Map.initialize';
