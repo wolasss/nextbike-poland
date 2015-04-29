@@ -1,5 +1,5 @@
 NB.Map = (function(){
-	
+	var _loading = false;
 	var _map, _config, _initialized = false, init, load, getInstance;
 
 	_config = {
@@ -14,6 +14,8 @@ NB.Map = (function(){
 		_config.center = new google.maps.LatLng(_config.center.x, _config.center.y);
 
 		if(!_initialized) {
+			_initialized = true;
+			_loading = true;
 			_map = new google.maps.Map(document.getElementById(_config.id), _config);
 
 			NB.Markerlabel.init(google);
@@ -23,12 +25,14 @@ NB.Map = (function(){
 			NB.InfoWindow.init(google);
 			NB.Markers.init(google);
 			NB.Nav.init(google);
-		} else {
-			_map.set(_config);
-			_map.setCenter(_config.center);
-		}
 
-		if(!_initialized) _initialized = true;
+			_loading = false;
+		} else {
+			if(!_loading) {
+				_map.set(_config);
+				_map.setCenter(_config.center);
+			}
+		}
 	};
 
 	load = function(lang, options) {
