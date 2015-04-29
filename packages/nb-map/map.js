@@ -1,5 +1,4 @@
 NB.Map = (function(){
-	var _loading = false, _loaded = false;
 	var _map, _config, _initialized = false, init, load, getInstance;
 
 	_config = {
@@ -14,8 +13,6 @@ NB.Map = (function(){
 		_config.center = new google.maps.LatLng(_config.center.x, _config.center.y);
 
 		if(!_initialized) {
-			_initialized = true;
-			_loading = true;
 			_map = new google.maps.Map(document.getElementById(_config.id), _config);
 
 			NB.Markerlabel.init(google);
@@ -25,23 +22,20 @@ NB.Map = (function(){
 			NB.InfoWindow.init(google);
 			NB.Markers.init(google);
 			NB.Nav.init(google);
-
-			_loading = false;
 		} else {
-			if(!_loading) {
-				_map.set(_config);
-				_map.setCenter(_config.center);
-			}
+			_map.set(_config);
+			_map.setCenter(_config.center);
 		}
+
+		if(!_initialized) _initialized = true;
 	};
 
 	load = function(lang, options) {
-		console.log("map load", _loaded, _initialized);
+		console.log("map load", _initialized);
 		$.extend(true, _config, options);
 
-		if(!_loaded) {
-			_loaded = true;
-			console.log("adding script");
+		if(!_initialized) {
+			console.log("adding script")
 			var script = document.createElement('script');
 				script.type = 'text/javascript';
 				script.src = 'https://maps.googleapis.com/maps/api/js?v=&v=3.20&libraries=places&sensor=false&callback=NB.Map.initialize';
