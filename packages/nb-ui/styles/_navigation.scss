@@ -9,6 +9,14 @@
 	padding: 15px;
 }
 
+.button.buttonList {
+	background: #c0c0c0;
+ 	padding: 7px 10px;
+ 	display: inline-block;
+ 	&:hover {
+ 		color: #ffffff;
+ 	}
+}
 
 .search { //input
 	display:inline-block;
@@ -64,7 +72,7 @@
 
 .buttonClosest {
 	background: #66c3ec;
-	width:100%;
+	width:89%;
 }
 
 .usagechangeImg {
@@ -85,7 +93,7 @@
 }
 
 
-.mobileNavToggler {
+i.mobileNavToggler {
 	cursor: pointer;
 	position: absolute;
 	left:10px;

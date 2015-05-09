@@ -18,6 +18,27 @@ Router.map(function(){
     });
 });
 
+Router.map(function(){
+    this.route('homeList', function(){
+        GAnalytics.pageview('/');
+        this.render();
+    }, {
+        path: '/lista',
+        layoutTemplate: 'nbLayout',
+        template: 'nbHomeList',
+        yieldTemplates: {
+          'nbHeaderList': {to: 'header'},
+          'nbFooterList': {to: 'footer'}
+        },
+        onBeforeAction: function() {
+            Alerts.clear(null);
+               
+            this.next();
+        }
+    });
+});
+
+
 Iron.Location.configure({
     'linkSelector' : 'a:not([ironskip])'
 });
