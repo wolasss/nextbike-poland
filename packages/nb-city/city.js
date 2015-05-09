@@ -29,6 +29,33 @@ NB.Cities = (function(){
 				}
 			});
 		});
+
+		Router.map(function(){
+			this.route(city+"List", function(){
+				GAnalytics.pageview(route);
+				this.render();
+			},{
+				path: route+'/lista',
+				layoutTemplate: 'nbLayout',
+				template: 'nbHomeList',
+				yieldTemplates: {
+					'nbHeaderList': {to: 'header'},
+					'nbFooterList': {to: 'footer'}
+				},
+				onBeforeAction: function() {
+					ReactiveStore.set("nbCity", city);
+
+					SEO.set({
+						title: TAPi18n.__("seo."+city+".title"),
+						meta: {
+							'description': TAPi18n.__("seo."+city+".desc")
+						}
+					});
+
+					this.next();
+				}
+			});
+		});
 	};
 
 	register = function(city, options){

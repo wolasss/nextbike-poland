@@ -9,6 +9,14 @@
     "closest": "Najbliżej mnie",
     "placeholder": "Wpisz lokalizację"
   },
+  "list": {
+    "title": "Dostępność rowerów miejskich",
+    "station": "Nazwa stacji", 
+    "number": "Liczba rowerów",
+    "info": "Celem tej strony jest udostępnienie łatwgo i szybkiego dostępu do liczby dostępnych rowerów na stacjach rowerów miejskich.",
+    "mapLink": "Jeżeli chcesz zobaczyć stacje na mapie, kliknij ",
+    "here": "tutaj"
+  },
   "key": {
   	"key": "Legenda:",
   	"current": "Aktualna lokalizacja",

@@ -22,7 +22,11 @@ if(Meteor.isClient) {
 		});
 	});
 	
+	Template.registerHelper("nbStations", function(){
+		return NB.Stations.find({}, {sort: {name: 1}});
+	});
 }
+
 
 if(Meteor.isServer) {
 	Meteor.publish('stations', function(city) {

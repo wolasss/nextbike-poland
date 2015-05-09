@@ -1,0 +1,28 @@
+%list-availability-item {
+	font-weight: bold;
+}
+
+.list-container {
+	padding: 10px;
+}
+
+.list {
+	li {
+		list-style: none;
+	}
+}
+
+.list-high {
+	@extend %list-availability-item;
+	color: green;
+}
+
+.list-medium {
+	@extend %list-availability-item;
+	color: orange;
+}
+
+.list-low {
+	@extend %list-availability-item;
+	color: red;
+}

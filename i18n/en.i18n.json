@@ -4,6 +4,14 @@
     "name": "City bikes stations",
     "desc": "Find a city bikes station very quickly, according to your location or given address."
   },
+  "list": {
+    "title": "City bikes availability",
+    "station": "Station Name", 
+    "number": "Bikes number",
+    "info": "The purpose of this site is to provide quick, and light info about bikes availability in polish cities.",
+    "mapLink": "If you wish to see stations on the map, click ",
+    "here": "here"
+  },
   "nav": {
     "search": "Search",
     "closest": "The closest to me",

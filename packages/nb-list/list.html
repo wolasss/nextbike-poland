@@ -1,0 +1,24 @@
+<template name="nbList">
+	<div class="list-container">
+		<h1>{{_ "list.title"}} - {{currentCity}}</h1>
+		
+		<ul class="list">
+			<li>
+				<strong>{{_ "list.station"}}</strong> : <strong>{{_ "list.number"}}</strong> 
+			</li>
+			{{#each nbStations}}
+				<li>
+					{{name}} : <span class="list-{{availability}}">{{bikes}}</span>
+				</li>
+			{{/each}}
+		</ul>
+
+		<p>
+			{{_ "list.info"}}
+		</p>
+
+		<p>
+			{{_ "list.mapLink"}} <a href="/">{{_ "list.here"}}</a>
+		</p>
+	</div>
+</template>
