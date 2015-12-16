@@ -1,5 +1,8 @@
 # GdzieMojRower.pl
 
+***Projekt zamknięty z racji, iż dane otrzymywane z "API" mają się niejak do rzeczywistości.***
+  
+
 ![Preview screenshot](https://raw.githubusercontent.com/wolasss/nextbike-poland/master/screen.png)
 
 ### Jak to działa? 
